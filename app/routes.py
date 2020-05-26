@@ -6,7 +6,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User, Post
 from werkzeug.urls import url_parse
 from datetime import datetime
-from flask_babel import _, get_locale
+from flask_babel import _, get_locale, lazy_gettext as _l
 
 @app.before_request
 def before_request():
@@ -181,7 +181,7 @@ def unfollow(username):
             return redirect(url_for('user', username=username))
         current_user.unfollow(user)
         db.session.commit()
-        flash(_('You have unfollowed %(username)s.', username=username))
+        flash(_('You are not following %(username)s.', username=username))
         return redirect(url_for('user', username=username))
     else:
         return redirect(url_for('index'))
