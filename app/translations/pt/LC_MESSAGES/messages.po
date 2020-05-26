@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-05-26 11:48+0100\n"
+"POT-Creation-Date: 2020-05-26 11:52+0100\n"
 "PO-Revision-Date: 2020-05-26 10:49+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt\n"
@@ -134,7 +134,7 @@ msgid "You are not following %(username)s."
 msgstr "Você deixou de seguir %(username)s."
 
 #: app/templates/404.html:4
-msgid "File Not Found"
+msgid "Not Found"
 msgstr "Arquivo não encontrado"
 
 #: app/templates/404.html:5 app/templates/500.html:6
