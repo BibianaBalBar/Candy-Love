@@ -9,7 +9,7 @@ from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
-from flask_babel import Babel
+from flask_babel import Babel, lazy_gettext as _l
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -53,6 +53,7 @@ if not app.debug:
 @babel.localeselector
 def get_locale():
     return request.accept_languages.best_match(app.config['LANGUAGES'])
+    
 
 from app import routes, models, errors
 
