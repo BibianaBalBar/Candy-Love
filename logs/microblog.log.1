@@ -1,0 +1,119 @@
+2020-05-20 21:09:53,450 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-20 21:11:28,228 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-20 21:12:51,188 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-20 21:13:19,736 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-21 12:24:13,279 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-21 16:30:39,588 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-21 20:01:52,418 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-21 20:04:38,008 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-21 20:10:24,149 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-21 20:56:41,691 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:42]
+2020-05-22 12:17:38,224 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:44]
+2020-05-22 16:40:47,539 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:44]
+2020-05-22 18:42:08,161 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:44]
+2020-05-22 18:42:39,788 ERROR: Exception on /reset_password_request [POST] [in /home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/lib/python3.7/smtplib.py", line 852, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "/usr/lib/python3.7/smtplib.py", line 600, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "/usr/lib/python3.7/smtplib.py", line 440, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "/usr/lib/python3.7/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/usr/lib/python3.7/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/bibi/bibistuff/microblog/app/routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/bibi/bibistuff/microblog/app/email.py", line 19, in send_password_reset_email
+    user=user, token=token))
+  File "/home/bibi/bibistuff/microblog/app/email.py", line 9, in send_email
+    mail.send(msg)
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/bibi/bibistuff/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/usr/lib/python3.7/smtplib.py", line 984, in quit
+    res = self.docmd("quit")
+  File "/usr/lib/python3.7/smtplib.py", line 420, in docmd
+    self.putcmd(cmd, args)
+  File "/usr/lib/python3.7/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/usr/lib/python3.7/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2020-05-24 10:48:00,567 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:46]
+2020-05-24 21:26:15,515 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:48]
+2020-05-24 21:36:58,397 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:48]
+2020-05-24 21:40:08,149 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:48]
+2020-05-26 11:23:14,256 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:23:39,619 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:30:04,522 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:36:11,573 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:39:27,751 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:40:29,609 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:43:26,872 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:44:25,490 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 11:48:35,831 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 12:03:58,585 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 12:04:46,713 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 12:04:59,459 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 12:33:39,563 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 12:34:24,675 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 22:57:10,111 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 22:59:36,625 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:09:30,080 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:09:40,778 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:11:43,920 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:12:53,675 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:14:43,473 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:17:26,260 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:17:57,586 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-26 23:20:01,599 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:17:02,046 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:21:28,768 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:22:33,634 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:23:11,817 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:23:54,713 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:25:01,459 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:27:26,154 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:35:12,801 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:39:13,629 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:50:22,651 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 11:58:22,008 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 12:00:47,331 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 16:25:39,111 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 16:29:46,182 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 16:31:18,891 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 16:31:43,192 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 16:33:08,596 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 16:33:50,781 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-27 17:32:52,206 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-05-28 23:17:41,209 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:51]
+2020-06-10 21:42:29,356 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:71]
+2020-06-10 21:44:05,222 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:71]
+2020-06-10 21:44:05,222 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:71]
+2020-06-10 21:47:44,297 INFO: Microblog startup [in /home/bibi/bibistuff/microblog/app/__init__.py:71]
