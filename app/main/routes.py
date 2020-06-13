@@ -19,25 +19,25 @@ def before_request():
     g.locale = str(get_locale())
 
 @bp.route('/')
-@bp.route('/index')
+@bp.route('/home')
 @login_required
 def home():
     page = request.args.get('page', 1, type=int)    
-    return render_template('index.html', title=_('Index'))
+    return render_template('home.html', title=_('Index'))
 
 
-# @bp.route('/', methods=['GET', 'POST'])
-@bp.route('/home', methods=['GET', 'POST'])
+@bp.route('/', methods=['GET', 'POST'])
+@bp.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():    
     page = request.args.get('page', 1, type=int)
     posts = current_user.followed_posts().paginate(
         page, current_app.config['POSTS_PER_PAGE'], False)
-    next_url = url_for('main.home', page=posts.next_num) \
+    next_url = url_for('main.index', page=posts.next_num) \
         if posts.has_next else None
-    prev_url = url_for('main.home', page=posts.prev_num) \
+    prev_url = url_for('main.index', page=posts.prev_num) \
         if posts.has_prev else None
-    return render_template('home.html', title=_('Home'), 
+    return render_template('index.html', title=_('Home'), 
                            posts=posts.items, next_url=next_url,
                            prev_url=prev_url)
 
@@ -52,7 +52,7 @@ def explore():
         if posts.has_next else None
     prev_url = url_for('main.explore', page=posts.prev_num) \
         if posts.has_prev else None
-    return render_template('home.html', title=_('Explore'),
+    return render_template('index.html', title=_('Explore'),
                            posts=posts.items, next_url=next_url,
                            prev_url=prev_url)
 
