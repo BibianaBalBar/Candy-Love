@@ -18,7 +18,7 @@ body {
 	background-size: auto;
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-position: 0 top, 600px top, 1200px top;
-	color: white;
+	color: #222126;
 }
 
 .navbar {
@@ -31,22 +31,22 @@ body {
 }
 
 .navbar-brand {
-	color: white;
+	color: #222126;
 	font-size: 4rem;
 	text-shadow: 3px 3px 3px rgba(207, 207, 207, 1);
 }
 .navbar-brand:hover {
-	color: white;
+	color: #222126;
 	font-size: 4rem;
 	text-shadow: 3px 3px 3px rgba(207, 207, 207, 1);
 }
 
 .nav-home {
-	color: white;
+	color: #222126;
 	text-shadow: 2px 2px 2px rgba(207, 207, 207, 1);
 }
 .nav-home:hover {
-	color: white;
+	color: #222126;
 	text-decoration: none;
 	background-color: transparent !important;
 	text-shadow: 2px 2px 2px rgba(207, 207, 207, 1);
@@ -61,6 +61,7 @@ body {
 }
 
 .table {
+	color: #222126;
 	h1 {
 		font-size: 4rem;
 		font-weight: bold;
@@ -101,4 +102,11 @@ body {
 		font-weight: bold;
 		text-shadow: 2px 2px 2px rgba(207, 207, 207, 1);
 	}
+	h2 {
+		text-shadow: 1px 1px 1px rgba(207, 207, 207, 1);
+	}
+}
+
+.name-in-post {
+	font-weight: bold;
 }

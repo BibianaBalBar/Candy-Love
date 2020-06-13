@@ -71,8 +71,8 @@ def user(username):
                     language=language)
         db.session.add(post)
         db.session.commit()
-        flash(_('New emeny added!'))
-        return redirect(url_for('main.home'))
+        flash(_('New candy added!'))
+        return redirect(url_for('main.index'))
     posts = user.posts.order_by(Post.timestamp.desc()).paginate(
         page, current_app.config['POSTS_PER_PAGE'], False)
     next_url = url_for('main.user', username=user.username,
