@@ -25,24 +25,67 @@ body {
   background-size: auto;
   background-color: #141414;
   border: none;
-  font-weight: 900;
-  font-size: 2rem;
-}
-
-.navbar a {
-  color: white;
-}
-
-.navbar-default {
-  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .navbar-brand {
+  color: white;
   font-size: 3rem;
-  text-shadow: 2px 2px 2px white;
+}
+
+.navbar-brand:hover {
+  color: white;
+  font-size: 3rem;
+}
+
+.nav-home {
+  color: white;
+}
+
+.nav-home:hover {
+  color: white;
+  text-decoration: none;
+  background-color: transparent !important;
 }
 
 .login-box {
   padding-top: 8rem;
+}
+
+.table h1 {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.table a {
+  color: red;
+}
+
+.into1 {
+  height: 100%;
+}
+
+.into1 h1 {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.log-link {
+  color: red;
+}
+
+.salutation {
+  font-weight: bold;
+  padding: 2rem;
+}
+
+.presentation {
+  padding: 10rem;
+  text-align: center;
+}
+
+.presentation h1 {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

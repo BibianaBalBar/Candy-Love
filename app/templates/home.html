@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+        <br>
+        <br>
+        <div class="presentation">
+                <h1>{{ _('Greetings, %(username)s!', username=current_user.username) }}</h1>
+                        {% if form %}
+                        {{ wtf.quick_form(form) }}
+                        <br>
+                        {% endif %}
+                <h2>Welcome to Sheldon's Enemies List, a safe place to store your enemies list and share it with your friends.</h2>
+                <h2>Do not trust Floopy Disks!</h2>
+        </div>
+{% endblock %}
