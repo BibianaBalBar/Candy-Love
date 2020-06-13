@@ -1,10 +1,20 @@
 {% extends 'bootstrap/base.html' %}
 
+{% block styles %}
+{{super()}}
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+{% endblock %}
+
+
 {% block title %}
     {% if title %}{{ title }} - Microblog{% else %}{{ _('Welcome to Microblog') }}{% endif %}
 {% endblock %}
 
 {% block navbar %}
+<body>
+    
+    <div class="main-body">
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -14,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url_for('main.index') }}">Microblog</a>
+                <a class="navbar-brand" href="{{ url_for('main.index') }}">Sheldon's Enemies List</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -39,7 +49,7 @@
         {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
-            <div class="alert alert-info" role="alert">{{ message }}</div>
+            <div class="alert alert-secondary" role="alert">{{ message }}</div>
             {% endfor %}
         {% endif %}
         {% endwith %}
@@ -55,7 +65,7 @@
     {{ moment.lang(g.locale) }}
     <script>
         function translate(sourceElem, destElem, sourceLang, destLang) {
-            $(destElem).html('<img src="{{ url_for('static', filename='loading.gif') }}">');
+            $(destElem).html('<img src="{{ url_for('static',filename='/loading.gif') }}">');
             $.post('/translate', {
                 text: $(sourceElem).text(),
                 source_language: sourceLang,
@@ -67,4 +77,6 @@
             });
         }
     </script>
+</div>
+</body>
 {% endblock %}
