@@ -2,13 +2,13 @@
 
 {% block styles %}
 {{super()}}
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
 {% endblock %}
 
 
 {% block title %}
-    {% if title %}{{ title }} - Microblog{% else %}{{ _('Welcome to Microblog') }}{% endif %}
+    {% if title %}{{ title }} - Candy Love{% else %}{{ _("Candy Love") }}{% endif %}
 {% endblock %}
 
 {% block navbar %}
@@ -24,11 +24,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url_for('main.home') }}">Sheldon's Enemies List</a>
+                <a class="navbar-brand" href="{{ url_for('main.home') }}">Candy Love</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a class="nav-home" href="{{ url_for('main.index') }}">{{ _("Friend's lists") }}</a></li>
+                    <li><a class="nav-home" href="{{ url_for('main.index') }}">{{ _("Friend's candies") }}</a></li>
                     <li><a class="nav-home" href="{{ url_for('main.explore') }}">{{ _('All users') }}</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

@@ -1,6 +1,6 @@
 <table class="table">
     <tr>
-        <td width="70px">
+        <td width="50px">
             <a href="{{ url_for('main.user', username=post.author.username) }}">
                 
             </a>    
@@ -12,7 +12,7 @@
             </a>
             {% endset %}
             
-            {{ _('%(username)s added a new Enemy %(when)s',               
+            {{ _('%(username)s added a new Candy %(when)s',               
                 username=user_link, when=moment(post.timestamp).fromNow()) }}:
             <br>
             Name: <span id="post{{ post.id }}"></span>{{ post.name }}</span>

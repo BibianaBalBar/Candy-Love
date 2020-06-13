@@ -28,6 +28,6 @@ class EmptyForm(FlaskForm):
 
 
 class PostForm(FlaskForm):
-    name = StringField('Name:', validators=[DataRequired()])
-    post = TextAreaField(_l('Infraction'), validators=[DataRequired()])
+    name = StringField('Candy name:', validators=[DataRequired()])
+    post = TextAreaField(_l('Why do you love it?'), validators=[DataRequired()])
     submit = SubmitField(_l('Submit'))

@@ -6,14 +6,16 @@
 }
 
 body {
-  font-family: 'Cinzel', serif;
-  background-color: #141414;
-  color: white;
+  font-family: 'Comic Neue', cursive;
+  font-size: 2rem;
+  background-color: #5ea1cc;
+  color: #222126;
+  height: 100%;
 }
 
 .main-body {
-  background-color: #141414;
-  background-image: url("../imgs/blooddrop1.png"), url("../imgs/blooddrop1.png"), url("../imgs/blooddrop1.png");
+  background-color: #5ea1cc;
+  background-image: url("../imgs/candymel.png"), url("../imgs/candymel.png"), url("../imgs/candymel.png");
   background-size: auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0 top, 600px top, 1200px top;
@@ -21,45 +23,59 @@ body {
 }
 
 .navbar {
-  background-image: url("../imgs/blooddrop1.png");
+  background-image: url("../imgs/candymel.png");
   background-size: auto;
-  background-color: #141414;
+  background-color: #5ea1cc;
   border: none;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
 }
 
 .navbar-brand {
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
+  text-shadow: 3px 3px 3px #cfcfcf;
 }
 
 .navbar-brand:hover {
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
+  text-shadow: 3px 3px 3px #cfcfcf;
 }
 
 .nav-home {
   color: white;
+  text-shadow: 2px 2px 2px #cfcfcf;
 }
 
 .nav-home:hover {
   color: white;
   text-decoration: none;
   background-color: transparent !important;
+  text-shadow: 2px 2px 2px #cfcfcf;
 }
 
 .login-box {
   padding-top: 8rem;
 }
 
-.table h1 {
+.login-box h1 {
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+  text-shadow: 2px 2px 2px #cfcfcf;
+}
+
+.table h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #cfcfcf;
+}
+
+.table p {
+  font-weight: bold;
 }
 
 .table a {
-  color: red;
+  color: #c7568b;
 }
 
 .into1 {
@@ -68,16 +84,17 @@ body {
 
 .into1 h1 {
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+  text-shadow: 2px 2px 2px #cfcfcf;
 }
 
 .log-link {
-  color: red;
+  color: #c7568b;
 }
 
 .salutation {
   font-weight: bold;
-  padding: 2rem;
+  padding: 3rem;
+  text-shadow: 2px 2px 2px #cfcfcf;
 }
 
 .presentation {
@@ -87,5 +104,6 @@ body {
 
 .presentation h1 {
   font-weight: bold;
+  text-shadow: 2px 2px 2px #cfcfcf;
 }
 /*# sourceMappingURL=style.css.map */
