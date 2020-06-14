@@ -12,6 +12,7 @@ from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
 
 
+
 db = SQLAlchemy()
 migrate = Migrate()
 login = LoginManager()
@@ -25,7 +26,7 @@ babel = Babel()
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
-
+    
     db.init_app(app)
     migrate.init_app(app, db)
     login.init_app(app)
@@ -33,6 +34,9 @@ def create_app(config_class=Config):
     bootstrap.init_app(app)
     moment.init_app(app)
     babel.init_app(app)
+
+    with app.app_context():
+        db.create_all()
 
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)
