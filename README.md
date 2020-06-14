@@ -1,5 +1,5 @@
 # Candy Love
-Python and Flask web app social media.  
+Python and Flask social media web app.    
 
 Users can list their favorite candies, follow other users and see posts from friends and all users
 
