@@ -3,7 +3,7 @@ Python and Flask social media web app.
 
 Users can list their favorite candies, follow other users and see posts from friends and all users
 
-![candyLove](https://github.com/BibianaBalBar/Candy-Love/blob/master/img/candy-love.png)
+![candyLove](https://github.com/BibianaBalBar/Candy-Love/blob/master/img/candy-love.gif)
 
 ## Deployed at: 
 http://candy-love-flask.herokuapp.com/
